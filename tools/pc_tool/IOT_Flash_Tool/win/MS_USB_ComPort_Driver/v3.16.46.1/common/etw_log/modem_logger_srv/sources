@@ -1,0 +1,21 @@
+TARGETNAME=modem_logger_srv
+TARGETTYPE=PROGRAM
+
+C_DEFINES=$(C_DEFINES) -D_WIN32WIN_
+
+MSC_WARNING_LEVEL=/WX /W4
+
+UMTYPE=console
+USE_MSVCRT=1
+
+TARGETLIBS=\
+	$(SDK_LIB_PATH)\user32.lib \
+	$(SDK_LIB_PATH)\Shell32.lib
+
+INCLUDES=
+
+SOURCES=\
+    modem_etw_logger_srv.cpp \
+    mels_debug.cpp
+
+

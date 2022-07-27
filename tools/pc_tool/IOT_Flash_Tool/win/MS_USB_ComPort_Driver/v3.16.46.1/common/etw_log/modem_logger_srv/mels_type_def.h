@@ -1,0 +1,106 @@
+/*****************************************************************************
+*  Copyright Statement:
+*  --------------------
+*  This software is protected by Copyright and the information contained
+*  herein is confidential. The software may not be copied and the information
+*  contained herein may not be used or disclosed except with the written
+*  permission of MediaTek Inc. (C) 2012
+*
+*  BY OPENING THIS FILE, BUYER HEREBY UNEQUIVOCALLY ACKNOWLEDGES AND AGREES
+*  THAT THE SOFTWARE/FIRMWARE AND ITS DOCUMENTATIONS ("MEDIATEK SOFTWARE")
+*  RECEIVED FROM MEDIATEK AND/OR ITS REPRESENTATIVES ARE PROVIDED TO BUYER ON
+*  AN "AS-IS" BASIS ONLY. MEDIATEK EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES,
+*  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF
+*  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NONINFRINGEMENT.
+*  NEITHER DOES MEDIATEK PROVIDE ANY WARRANTY WHATSOEVER WITH RESPECT TO THE
+*  SOFTWARE OF ANY THIRD PARTY WHICH MAY BE USED BY, INCORPORATED IN, OR
+*  SUPPLIED WITH THE MEDIATEK SOFTWARE, AND BUYER AGREES TO LOOK ONLY TO SUCH
+*  THIRD PARTY FOR ANY WARRANTY CLAIM RELATING THERETO. MEDIATEK SHALL ALSO
+*  NOT BE RESPONSIBLE FOR ANY MEDIATEK SOFTWARE RELEASES MADE TO BUYER'S
+*  SPECIFICATION OR TO CONFORM TO A PARTICULAR STANDARD OR OPEN FORUM.
+*
+*  BUYER'S SOLE AND EXCLUSIVE REMEDY AND MEDIATEK'S ENTIRE AND CUMULATIVE
+*  LIABILITY WITH RESPECT TO THE MEDIATEK SOFTWARE RELEASED HEREUNDER WILL BE,
+*  AT MEDIATEK'S OPTION, TO REVISE OR REPLACE THE MEDIATEK SOFTWARE AT ISSUE,
+*  OR REFUND ANY SOFTWARE LICENSE FEES OR SERVICE CHARGE PAID BY BUYER TO
+*  MEDIATEK FOR SUCH MEDIATEK SOFTWARE AT ISSUE.
+*
+*  THE TRANSACTION CONTEMPLATED HEREUNDER SHALL BE CONSTRUED IN ACCORDANCE
+*  WITH THE LAWS OF THE STATE OF CALIFORNIA, USA, EXCLUDING ITS CONFLICT OF
+*  LAWS PRINCIPLES.  ANY DISPUTES, CONTROVERSIES OR CLAIMS ARISING THEREOF AND
+*  RELATED THERETO SHALL BE SETTLED BY ARBITRATION IN SAN FRANCISCO, CA, UNDER
+*  THE RULES OF THE INTERNATIONAL CHAMBER OF COMMERCE (ICC).
+*
+*****************************************************************************/
+
+#ifndef _MELS_TYPE_DEF_H
+#define _MELS_TYPE_DEF_H
+
+#ifdef _WIN32
+
+#include <windows.h>
+
+#ifndef VOID
+#define VOID			void
+#define PVOID			void *
+#endif
+
+#ifndef BOOL
+#define	BOOL			LONG
+#endif
+
+#ifndef FALSE
+#define FALSE			0
+#define TRUE			1
+#endif
+
+/* type definitions for signed integers */
+#define INT8			CHAR
+#define INT16			SHORT
+#define INT32			LONG
+#define INT64			LONGLONG
+
+/* type definitions for signed integer pointers */
+#define PINT8			PCHAR
+#define PINT16			PSHORT
+#define PINT32			PLONG
+#define PINT64			PLONGLONG
+
+/* type definitions for unsigned integers */
+#define UINT8			UCHAR
+#define UINT16			USHORT
+#define UINT32			ULONG
+#define UINT64			ULONGLONG
+
+/* type definitions for unsigned integer pointers */
+#define PUINT8			PUCHAR
+#define PUINT16			PUSHORT
+#define PUINT32			PULONG
+#define PUINT64			PULONGLONG
+
+/* type definitions for floating number pointers */
+#define FLOAT16			float
+#define FLOAT32			double
+
+#define INT_8			INT8
+#define INT_16			INT16
+#define INT_32			INT32
+#define INT_64			INT64
+
+#define PINT_8			PINT8
+#define PINT_16			PINT16
+#define PINT_32			PINT32
+#define PINT_64			PINT64
+
+#define UINT_8			UINT8
+#define UINT_16			UINT16
+#define UINT_32			UINT32
+#define UINT_64			UINT64
+
+#define PUINT_8			PUINT8
+#define PUINT_16		PUINT16
+#define PUINT_32		PUINT32
+#define PUINT_64		PUINT64
+
+#endif /* _WIN32 */
+#endif /* _MELS_TYPE_DEF_H */

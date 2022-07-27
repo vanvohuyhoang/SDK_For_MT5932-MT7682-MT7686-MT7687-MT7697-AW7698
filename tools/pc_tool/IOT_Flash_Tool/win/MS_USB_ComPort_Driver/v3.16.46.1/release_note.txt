@@ -1,0 +1,32 @@
+====================================================================================
+Package : <<MTK_Datacard_FWT_USB_Driver v3.1646.1>>
+Date    : <<2016/11/16>>
+-------------------------------------------------------------------------------------
+The latest version of MTK_USB_COM_Driver_SDK is located under:
+\\glbfs14\sw_releases\Wireless_Global_Tools\Tool_Release\@Drivers\MTK_Datacard_FWT_USB_Driver\sdk\com_v3.16.46.1
+
+[Quick Summary]
+ 
+[中文]
+1. 增加对PID 00AC/00AD/7104 COM port的支持。
+2. 该版本com driver v3.1646.0已获得微软HCK认证。
+		
+[English]
+1. Add new PIDs to support list: 00AC/00AD/7104.
+2. Please note, HCK certificate is ready for this version.
+ 
+[Release Note] 
+
+New Features:
+N/A
+
+Bug Fix:
+N/A
+
+Enhancements:
+N/A
+
+Related documents:
+1. How to capture driver log:
+  a)You can get com driver log in %SystemRoot%\system32\LogFiles\WMI\MediaTek,
+     the log file name is COM_LOG.etl.xxx(the "xxx" is like 001, etc.)
